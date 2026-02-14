@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\OmegaValidator\Interfaces;
+namespace JordJD\OmegaValidator\Interfaces;
 
 interface Rule
 {

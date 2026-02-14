@@ -1,8 +1,8 @@
 <?php
 
-namespace DivineOmega\OmegaValidator;
+namespace JordJD\OmegaValidator;
 
-use DivineOmega\Translator\Translator as BaseTranslator;
+use JordJD\Translator\Translator as BaseTranslator;
 
 class Translator extends BaseTranslator
 {

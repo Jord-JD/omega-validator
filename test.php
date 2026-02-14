@@ -1,10 +1,10 @@
 <?php
 
-use DivineOmega\OmegaValidator\Rules\IsEmail;
-use DivineOmega\OmegaValidator\Rules\IsString;
-use DivineOmega\OmegaValidator\Rules\Required;
-use DivineOmega\OmegaValidator\Translator;
-use DivineOmega\OmegaValidator\Validator;
+use JordJD\OmegaValidator\Rules\IsEmail;
+use JordJD\OmegaValidator\Rules\IsString;
+use JordJD\OmegaValidator\Rules\Required;
+use JordJD\OmegaValidator\Translator;
+use JordJD\OmegaValidator\Validator;
 
 require_once __DIR__.'/vendor/autoload.php';
 

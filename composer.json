@@ -13,11 +13,11 @@
     "php": ">=7.1",
     "ext-json": "*",
     "ext-pdo": "*",
-    "divineomega/translator": "^1.0.1"
+    "jord-jd/translator": "^3.0"
   },
   "autoload": {
     "psr-4": {
-      "DivineOmega\\OmegaValidator\\": "src/"
+      "JordJD\\OmegaValidator\\": "src/"
     }
   },
   "replace": {
@@ -25,7 +25,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0-dev"
+      "dev-master": "4.0-dev"
     }
   }
 }

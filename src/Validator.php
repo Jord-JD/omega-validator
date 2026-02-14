@@ -1,10 +1,10 @@
 <?php
 
-namespace DivineOmega\OmegaValidator;
+namespace JordJD\OmegaValidator;
 
 
-use DivineOmega\OmegaValidator\Exceptions\InvalidRuleException;
-use DivineOmega\OmegaValidator\Interfaces\Rule;
+use JordJD\OmegaValidator\Exceptions\InvalidRuleException;
+use JordJD\OmegaValidator\Interfaces\Rule;
 
 class Validator
 {

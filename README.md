@@ -13,11 +13,11 @@ composer require jord-jd/omega-validator
 See the following example usage.
 
 ```php
-use DivineOmega\OmegaValidator\Rules\IsEmail;
-use DivineOmega\OmegaValidator\Rules\IsString;
-use DivineOmega\OmegaValidator\Rules\Required;
-use DivineOmega\OmegaValidator\Translator;
-use DivineOmega\OmegaValidator\Validator;
+use JordJD\OmegaValidator\Rules\IsEmail;
+use JordJD\OmegaValidator\Rules\IsString;
+use JordJD\OmegaValidator\Rules\Required;
+use JordJD\OmegaValidator\Translator;
+use JordJD\OmegaValidator\Validator;
 
 /* ... */
 
@@ -39,9 +39,9 @@ if ($validator->fails()) {
     // array(1) {
     //  ["email"]=>
     //  array(2) {
-    //    ["DivineOmega\OmegaValidator\Rules\Required"]=>
+    //    ["JordJD\OmegaValidator\Rules\Required"]=>
     //    string(22) "The email is required."
-    //    ["DivineOmega\OmegaValidator\Rules\IsEmail"]=>
+    //    ["JordJD\OmegaValidator\Rules\IsEmail"]=>
     //    string(40) "The email must be a valid email address."
     //  }
     // }

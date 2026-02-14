@@ -1,8 +1,8 @@
 <?php
 
-namespace DivineOmega\OmegaValidator\Rules;
+namespace JordJD\OmegaValidator\Rules;
 
-use DivineOmega\OmegaValidator\Interfaces\Rule;
+use JordJD\OmegaValidator\Interfaces\Rule;
 
 class IsBetween implements Rule
 {
