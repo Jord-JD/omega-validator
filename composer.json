@@ -1,23 +1,31 @@
 {
-    "name": "divineomega/omega-validator",
-    "description": "Omega Validator",
-    "type": "library",
-    "license": "LGPL-3.0-only",
-    "authors": [
-        {
-            "name": "Jordan Hall",
-            "email": "jordan@hall05.co.uk"
-        }
-    ],
-    "require": {
-        "php": ">=7.1",
-        "ext-json": "*",
-        "ext-pdo": "*",
-        "divineomega/translator": "^1.0.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "DivineOmega\\OmegaValidator\\": "src/"
-        }
+  "name": "jord-jd/omega-validator",
+  "description": "Omega Validator",
+  "type": "library",
+  "license": "LGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Jordan Hall",
+      "email": "jordan@hall05.co.uk"
     }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "divineomega/translator": "^1.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivineOmega\\OmegaValidator\\": "src/"
+    }
+  },
+  "replace": {
+    "divineomega/omega-validator": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  }
 }

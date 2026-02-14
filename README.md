@@ -5,7 +5,7 @@
 To install Omega Validator, just run the following Composer command.
 
 ```bash
-composer require divineomega/omega-validator
+composer require jord-jd/omega-validator
 ```
 
 ## Usage
