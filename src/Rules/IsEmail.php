@@ -8,8 +8,7 @@ class IsEmail implements Rule
 {
     public function passes(string $key, $value): bool
     {
-        $value = filter_var($value, FILTER_SANITIZE_EMAIL);
-        return filter_var($value, FILTER_VALIDATE_EMAIL);
+        return is_string($value) && filter_var($value, FILTER_VALIDATE_EMAIL) !== false;
     }
 
     public function message(): string

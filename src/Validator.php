@@ -88,7 +88,29 @@ class Validator
             $message = $translator->translate($message);
         }
 
-        return ucfirst(str_replace([':key', ':value'], [$key, $value], $message));
+        return ucfirst(str_replace([':key', ':value'], [$key, $this->printableValue($value)], $message));
     }
 
+    private function printableValue($value)
+    {
+        if ($value === null) {
+            return 'null';
+        }
+
+        if ($value === true) {
+            return 'true';
+        }
+
+        if ($value === false) {
+            return 'false';
+        }
+
+        if (is_scalar($value)) {
+            return (string) $value;
+        }
+
+        $json = json_encode($value);
+
+        return $json !== false ? $json : gettype($value);
+    }
 }
