@@ -8,8 +8,7 @@ class IsUrl implements Rule
 {
     public function passes(string $key, $value): bool
     {
-        $value = filter_var($value, FILTER_SANITIZE_URL);
-        return filter_var($value, FILTER_VALIDATE_URL);
+        return is_string($value) && filter_var($value, FILTER_VALIDATE_URL) !== false;
     }
 
     public function message(): string

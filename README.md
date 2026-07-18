@@ -1,5 +1,7 @@
 # Omega Validator
 
+[![Tests](https://github.com/Jord-JD/omega-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/Jord-JD/omega-validator/actions/workflows/tests.yml)
+
 ## Installation
 
 To install Omega Validator, just run the following Composer command.

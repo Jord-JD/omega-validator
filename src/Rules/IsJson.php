@@ -8,7 +8,13 @@ class IsJson implements Rule
 {
     public function passes(string $key, $value): bool
     {
-        return json_decode($value, true) !== null;
+        if (!is_string($value)) {
+            return false;
+        }
+
+        json_decode($value, true);
+
+        return json_last_error() === JSON_ERROR_NONE;
     }
 
     public function message(): string

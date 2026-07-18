@@ -15,9 +15,17 @@
     "ext-pdo": "*",
     "jord-jd/translator": "^3.0"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5||^9.6"
+  },
   "autoload": {
     "psr-4": {
       "JordJD\\OmegaValidator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JordJD\\OmegaValidator\\Tests\\": "tests/"
     }
   },
   "replace": {

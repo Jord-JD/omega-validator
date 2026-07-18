@@ -8,7 +8,15 @@ class Required implements Rule
 {
     public function passes(string $key, $value): bool
     {
-        return !empty($value);
+        if ($value === null || $value === '') {
+            return false;
+        }
+
+        if (is_array($value)) {
+            return count($value) > 0;
+        }
+
+        return true;
     }
 
     public function message(): string
